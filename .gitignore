@@ -1,31 +1,26 @@
-# Python
+# Virtual environment directories
+venv/
+.venv/
+env/
+ENV/
+
+# Python Cache files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+.pytest_cache/
+.ipynb_checkpoints/
 
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Large Model Weights
+*.pt
+*.pth
+*.onnx
+*.engine
 
-# Service Uploads directory contents (except .gitkeep)
-**/ai-service/uploads/*
-!**/ai-service/uploads/.gitkeep
-
-# Node
-**/node_modules/
-**/dist/
-**/dist-ssr/
-
-# OS/System
-.DS_Store
-Thumbs.db
+# Machine Learning Outputs and Workspaces
+training/runs/
+dataset_expansion/annotation_workspace/
+dataset_expansion/raw/
+dataset_expansion/reviewed/
+dataset_v2/
